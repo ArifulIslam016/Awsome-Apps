@@ -3,7 +3,7 @@ import appStoreLogo from '../../assets/AppStore.png'
 import playStoreLogo from '../../assets/playStore.png'
 const Banner = () => {
     return (
-      <div className="">
+      <div className=" max-w-[1440px] mx-auto">
         <h1 className="text-[72px] font-bold text-center pt-[80px] px-3 md:px-12 lg:px-[421px]">
           We Build{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#632EE3] to-[#9F62F2]">
@@ -16,11 +16,11 @@ const Banner = () => {
           simpler, smarter, and more exciting.Our goal is to turn your ideas
           into digital experiences that truly make an impact.
         </p>
-        <div className="max-w-[440px] gap-4 flex mx-auto pt-10 pb-10">
+        <div className="max-w-[440px] gap-8 flex mx-auto pt-10 pb-10">
           {" "}
           <a
             href="https://play.google.com/store/games?hl=en"
-            className="flex items-center btn"
+            className="flex items-center btn px-[31px] py-4"
           >
             {" "}
             <img src={playStoreLogo} alt="playStoreLogo" />
@@ -28,7 +28,7 @@ const Banner = () => {
           </a>
           <a
             href="https://www.apple.com/app-store/"
-            className="flex items-center btn"
+            className="flex items-center btn px-[31px] py-4"
           >
             {" "}
             <img src={appStoreLogo} alt="appStoreLogo" />
